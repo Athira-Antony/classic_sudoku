@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Classic Sudoku Game</title>
+
+    <link rel = "stylesheet" href = "su_style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class = "head">Sudoku :)</h1>
+        
+        <div id="grid"></div>
+
+        <div class="buttons">
+            <button class="but" onclick="selectNumber(1)">1</button>
+            <button class="but" onclick="selectNumber(2)">2</button>
+            <button class="but" onclick="selectNumber(3)">3</button>
+            <button class="but" onclick="selectNumber(4)">4</button>
+            <button class="but" onclick="selectNumber(5)">5</button>
+            <button class="but" onclick="selectNumber(6)">6</button>
+            <button class="but" onclick="selectNumber(7)">7</button>
+            <button class="but" onclick="selectNumber(8)">8</button>
+            <button class="but" onclick="selectNumber(9)">9</button>
+        </div>
+        <button onclick="generatePuzzle()" class = "fn">Start</button>
+        <button onclick="solveSudoku()" class = "fn">Reveal</button>
+        <button onclick = "help()" class = "fn">Help</button>
+    </div>
+
+    <div id="popup">
+        <img src="images/review.png" id="main-star">
+        <div id="message">Congratulations! You won.</div>
+        <div id="newGame">New Game</div>
+      </div>
+
+      <div id="ansReveal">
+        <!-- reveal the ans -->
+      </div>
+
+    <script src = "su_script.js"></script>
+</body>
+</html>
